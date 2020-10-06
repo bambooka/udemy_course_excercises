@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+</head>
+<body>
+<form action="https://wikipedia.com" method="get">
+    <div>
+        <label for="first-name">First Name</label>
+        <input
+                name='first-name'
+                id="first-name"
+                type="text"
+                placeholder="name"
+                required
+        />
+        <label for="last-name">Last Name</label>
+        <input
+                type="text"
+                name="last-name"
+                id="last-name"
+                placeholder="last name"
+                required
+        />
+    </div>
+
+    <div>
+        <Label>Male
+            <input type="radio" name="sex" value="male"/>
+        </Label>
+        <Label>Female
+            <input type="radio" name="sex" value="female" />
+        </Label>
+    </div>
+
+    <div>
+        <label> email
+            <input type="email" name="email" placeholder="email" />
+        </label>
+        <label>password
+            <input type="password" name="password" placeholder="password" minlength="2" maxlength="15"/>
+        </label>
+    </div>
+
+    <div>
+        <label>Birthday
+            <input type="date" />
+        </label>
+    </div>
+
+    <div>
+        <label>I agree with the term and conditions
+            <input type="checkbox" name="agreement"/>
+        </label>
+    </div>
+
+    <input
+            type="submit"
+            name="submit" />
+</form>
+</body>
+</html>
